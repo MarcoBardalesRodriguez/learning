@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calcular cuotas</title>
+	<script src="./montodecompra.js"></script>
+</head>
+<body>
+
+	<h1>Calcula facil tus cuotas</h1>
+
+	<div>
+		<label for="buyer">buyer</label>
+		<input type="text" name="buyer" id="buyer" value="marco">
+		<label for="house_price">house price</label>
+		<input type="text" name="house_price" id="house_price" value="100000">
+		<label for="salary">salary</label>
+		<input type="text" name="salary" id="salary" value="5000">
+		<button onclick="showResults()">calculate</button>
+	</div>
+
+	<template id="template_buyer">
+		<br><hr><br>
+		<table>
+			<tr>
+				<td>buyer</td>
+				<td id="t-buyer"></td>
+			</tr>
+			<tr>
+				<td>house price</td>
+				<td id="t-house_price"></td>
+			</tr>
+			<tr>
+				<td>payment time</td>
+				<td id="t-payment_time"></td>
+			</tr>
+			<tr>
+				<td>initial payment</td>
+				<td id="t-initial_payment"></td>
+			</tr>
+			<tr>
+				<td>monthly payment</td>
+				<td id="t-monthly_payment"></td>
+			</tr>
+		</table>
+
+	</template>
+	
+	<!-- <script src="./montodecompra.js"></script> -->
+</body>
+</html>
